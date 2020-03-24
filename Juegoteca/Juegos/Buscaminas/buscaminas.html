@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charste="utf-8">	
+		<title>Buscaminas</title>	
+		<link rel="stylesheet" href="./Css/estilos.css" >
+		<link rel="shortcut icon" href="Img/mina.png">
+		<link href="https://fonts.googleapis.com/css?family=Felipa" rel="stylesheet"> 
+    	<script src="./Js/buscaminas.js"></script>
+	</head>
+	<body onload="cargarTablero(1);">
+		<h1>Buscaminas!</h1>
+		<div id="tiempoJuego"></div>
+		<div id="puntuacion" onload="puntuar();"></div>
+		<div id="puntuacionFinal" onload="puntuarFinal();"></div>
+		<div id="cantidadMinas"></div>
+		<div id="tablerominas" class="tablero"></div>
+		<input type="button" onclick="recargar();" value="Recargar">
+	</body>
+
+</html>
